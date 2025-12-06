@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card" role="region" aria-label="Countdown timer">
+    <div class="top">
+      <div class="logo">♥</div>
+      <div>
+        <h1>Timer</h1>
+        <p class="lead">Soft, pastel countdown with notification & alert sound.</p>
+      </div>
+    </div>
+
+    <div class="row" style="position:relative;margin-top:18px;">
+      <input id="secondsInput" type="number" min="1" placeholder="Enter seconds — e.g. 30" aria-label="seconds input" />
+      <button id="startBtn" class="btn btn--primary">Start</button>
+    </div>
+
+    <div class="controls">
+      <button id="pauseBtn" class="btn btn--ghost">Pause</button>
+      <button id="resetBtn" class="btn btn--ghost">Reset</button>
+      <button id="permBtn" class="btn btn--ghost">Allow Notifications</button>
+    </div>
+
+    <div class="timer" id="display">00:00</div>
+    <div class="sub">A notification and short alert play when the timer completes.</div>
+
+    <footer></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
